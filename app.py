@@ -3,7 +3,7 @@ import pandas as pd
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("word_list_es_2000.csv", sep=",")
+    return pd.read_csv("word_list_es_2000.csv", sep=",", quotechar = '"')
 
 df = load_data()
 
